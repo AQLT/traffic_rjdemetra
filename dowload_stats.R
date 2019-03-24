@@ -1,5 +1,5 @@
 username <- "AQLT"
-password <- ""
+password <- rstudioapi::askForPassword()
 
 # referrers
 res <- system(sprintf("curl -u %s:%s https://api.github.com/repos/jdemetra/rjdemetra/traffic/popular/referrers", username , password),
