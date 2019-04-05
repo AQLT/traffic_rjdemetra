@@ -2,7 +2,7 @@ library(dplyr)
 library(dlstats)
 library(lubridate)
 library(RJDemetra)
-cran_stats("Rcpp")
+# cran_stats("Rcpp")
 ts_download <- function(pkg){
     print(sprintf("Downloading stats on %s", pkg))
     data <- cran_stats(pkg)
